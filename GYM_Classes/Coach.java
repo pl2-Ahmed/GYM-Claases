@@ -1,6 +1,6 @@
 package GYM_Classes;
 
-import java.util.Date;
+import java.util.*;
 
 public class Coach extends User {
     /*start data fields*/
@@ -8,16 +8,16 @@ public class Coach extends User {
     /*end data fields*/
     //***********************************************************************
     /* start constractoers */
-    public Coach(int id, String filrstName, String lastName, String email, String password, String address, String phoneNumber, Date birthDate, double salary)
+    public Coach(int id, String firstName, String lastName, String email, String password, String address, String phoneNumber, Date birthDate, double salary)
     {
-        super( id , filrstName , lastName , email , password , address , phoneNumber , birthDate );
+        super( id , firstName , lastName , email , password , address , phoneNumber , birthDate );
         this.salary = salary;
     }
     /* end constractoers */
     //***********************************************************************
     /*start seter*/
 
-    public void setSallary(double salary) {
+    public void setSalary(double salary) {
         this.salary = salary;
     }
     /*start seter*/
