@@ -19,7 +19,7 @@ public class Member extends User {
     /*end data fields*/
     //***********************************************************************
     /* start constractoers */
-    public Member(int id,String filrstName,String lastName,String email,String password,String address,String phoneNumber,Date birthDate,Date dateSubscriptionEnd,double SubscriptionPrice,double weight,double height,int coachId){
+    public Member(int id,String firstName,String lastName,String email,String password,String address,String phoneNumber,Date birthDate,Date dateSubscriptionEnd,double SubscriptionPrice,double weight,double height,int coachId){
         super( id , filrstName , lastName , email , password , address , phoneNumber , birthDate );
         this.dateSubscriptionEnd = dateSubscriptionEnd;
         this.SubscriptionPrice = SubscriptionPrice;
