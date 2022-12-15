@@ -6,7 +6,7 @@ abstract public class User {
     //***************
     private Date birthDate;
     //********************
-    private String filrstName;
+    private String firstName;
     private String lastName;
     private String email;
     private String address;
@@ -20,9 +20,9 @@ abstract public class User {
     public User(){
 
     }
-    public User(int id,String filrstName,String lastName,String email,String password,String address,String phoneNumber,Date birthDate){
+    public User(int id,String firstName,String lastName,String email,String password,String address,String phoneNumber,Date birthDate){
         this.id                     = id;
-        this.filrstName             = filrstName;
+        this.firstName             = firstName;
         this.lastName               = lastName;
         this.email                  = email;
         this.password               = password;
@@ -37,7 +37,7 @@ abstract public class User {
         this.id = id;
     }
 
-    public void setFilrstName(String filrstName) {
+    public void setFirstName(String firstName) {
         this.filrstName = filrstName;
     }
 
@@ -73,8 +73,8 @@ abstract public class User {
         return id;
     }
 
-    public String getFilrstName() {
-        return filrstName;
+    public String getFirstName() {
+        return firstName;
     }
 
     public String getLastName() {
